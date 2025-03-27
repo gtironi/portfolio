@@ -5,48 +5,22 @@
 	--color-header-bg: oklch(72.5% 0.0715 202 / 50%);
 }
 
+html{
+	color-scheme: light dark;
+}
 body {
     font: 100%/1.5 system-ui; /* From lab 1 */
     max-width: 100ch; /* step 1 */
     margin-inline: auto; /* step 1 */
 	padding: 1cm; /* step 1 */
 }
- 
-nav ul,
-nav il {
-	display: contents; /* step 2.1 */
-}
 
-nav {
-	display: flex; /*step 2.2 part 1*/
-	margin-bottom: 1em; /*step 2.2 part 2*/
-	border-bottom-width:1px; /*step 2.2 part 3*/
-	border-bottom-style:solid; /*step 2.2 part 3*/
-	border-bottom-color:oklch(80% 3% 200); /*step 2.2 part 3*/
-}
-
-nav a {
-	flex:1; /*step 2.2 part 1*/
-	text-decoration: none;/*step 2.2 part 2*/
-	color: inherit; /*step 2.2 part 2*/
-	text-align: center; /*step 2.2 part 2*/
-	padding: 0.5em; /*step 2.2 part 2*/
-}
-
-nav a.current {
-	border-bottom-width:0.4em; /*step 2.2 task*/
-	border-bottom-style:solid; /*step 2.2 task*/
-	border-bottom-color:oklch(80% 3% 200); /*step 2.2 task*/
-	padding-bottom:0.1em; /*step 2.2 task*/
-	font-weight: bold; /*step 2.2 task*/
-}
-
-nav a:hover {
-	border-bottom-width:0.4em; /*step 2.2 task extra*/
-	border-bottom-style:solid; /*step 2.2 task extra*/
-	border-bottom-color:var(--color-accent); /*step 2.2 task extra*/
-	padding-bottom:0.1em; /*step 2.2 task extra*/
-	background-color: oklch(from var(--color-accent) 95% 5% h); /*step 2.2 task extra*/
+.color-scheme{
+	position:absolute;
+	top: 1rem;
+	right: 1rem;
+	display: inline-flex;
+	gap: 5px;
 }
 
 input,textarea,button {
@@ -118,4 +92,4 @@ header{
 	background-color: var(--color-header-bg); /*step 5 free*/
 	font-weight: bold; /*step 5 free*/
 	text-transform: uppercase; /*step 5 free*/
-} 
+}

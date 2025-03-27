@@ -1,10 +1,23 @@
 <svelte:head>
-  <title>Projects</title>
+  <title>Gustavo's projects</title>
 </svelte:head>
+<script>
+    import projects from "$lib/projects.json";
+    import Project from "$lib/Project.svelte";
+</script>
 
-<h1>Projects</h1>
-<!-- .projects>article*6>h2>lorem4^img[src="https://i.etsystatic.com/iap/a0f246/5502938083/iap_640x640.5502938083_69958kp0.jpg"]+p>lorem -->
+<!-- <pre>{ JSON.stringify(projects, null, "\t") }</pre>   -->
+
+<h1>My { projects.length} Projects</h1>
 <div class="projects">
+    {#each projects as p}
+        <Project data={p}/>
+    {/each}
+</div>
+
+
+<!-- .projects>article*6>h2>lorem4^img[src="https://i.etsystatic.com/iap/a0f246/5502938083/iap_640x640.5502938083_69958kp0.jpg"]+p>lorem -->
+<!-- <div class="projects">
     <article>
         <h2>Lorem ipsum dolor sit.</h2>
         <img src="https://i.etsystatic.com/iap/a0f246/5502938083/iap_640x640.5502938083_69958kp0.jpg" alt="">
@@ -35,4 +48,4 @@
         <img src="https://i.etsystatic.com/iap/a0f246/5502938083/iap_640x640.5502938083_69958kp0.jpg" alt="">
         <p>Tempore, culpa consequatur voluptatem quam, repellat inventore alias nam ut incidunt obcaecati qui neque eaque illum nostrum totam ipsa quae quaerat sint quis reiciendis omnis natus placeat quibusdam? Ut, assumenda.</p>
     </article>
-</div>
+</div>  -->

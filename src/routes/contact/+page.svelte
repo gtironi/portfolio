@@ -1,10 +1,12 @@
 <svelte:head>
   <title>Contact me</title>
 </svelte:head>
-<!-- Forms: -->
-<form action="mailto:b51083@fgv.edu.br" method="get">
+
+<form action="mailto:foo@example.com" method="GET">
     <label for="email">Email: <input id="email" type="email" name="text_email"> </label>
     <label for="subject">Subject: <input id="subject" type="text" name="text_subject"> </label>
     <label for="body">Body: <textarea id="body" name="text_message"></textarea> </label>
-    <button type="submit">Send</button>
+
+    <input type="submit" value="Submit" id="button">
+    <!-- <button>Submit</button> -->
 </form>
