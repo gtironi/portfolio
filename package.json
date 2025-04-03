@@ -1,5 +1,5 @@
 {
-	"name": "my-portfolio",
+	"name": "my-portfolio2",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -14,5 +14,8 @@
 		"svelte": "^4.2.19",
 		"vite": "^4.3.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"d3": "^7.9.0"
+	}
 }
