@@ -9,7 +9,6 @@
     import Bar from '$lib/Bar.svelte';
     import Scrolly from "svelte-scrolly";
 
-
     let data = [];
     let commits = [];
     let width = 1000, height = 600;
