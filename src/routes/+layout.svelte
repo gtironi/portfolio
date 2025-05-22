@@ -8,7 +8,7 @@
         { url: "/contact", title: "Contact" },
         { url: "/resume", title: "Resume" },
         { url: "/meta", title: "Meta" },
-        {url: "https://github.com/Mike-Kowalski", title:"Github"}
+        {url: "https://github.com/gtironi", title:"Github"}
     ];
 
     let colorScheme = "light dark";
@@ -22,11 +22,11 @@
 <!-- {
     JSON.stringify($page)
 } -->
-  
+
 <nav>
     {#each pages as p}
         <a
-            href={p.url.startsWith("http") 
+            href={p.url.startsWith("http")
                 ? p.url: `${base}${p.url}`}
             class:current={$page.route.id === p.url}
             target={p.url.startsWith("http") ? "_blank" : undefined}
@@ -34,7 +34,7 @@
             {p.title}
         </a>
     {/each}
-</nav>  
+</nav>
 
 <label class="color-scheme">
     Theme:
@@ -52,12 +52,12 @@
 <style>
     nav {
         --border-color: oklch(50% 10% 200 / 40%);
-        
+
         display: flex;
         margin-bottom: 1em;
         border-bottom-width:1px;
         border-bottom-style:solid;
-        
+
         border-bottom-color: var(--border-color);
     }
 
@@ -65,7 +65,7 @@
         flex:1;
         text-decoration: none;
         color: inherit;
-        text-align: center; 
+        text-align: center;
         padding: 0.5em;
     }
 

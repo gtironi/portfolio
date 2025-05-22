@@ -21,7 +21,7 @@ let pages = [
 	{url: "projects", title: "Projects"},
 	{url: "contact", title: "Contact"},
     {url: "resume", title: "Resume"},
-    {url: "https://github.com/Mike-Kowalski", title:"Github"}
+    {url: "https://github.com/gtironi", title:"Github"}
 ];
 
 // let nav = document.createElement("nav");
@@ -67,7 +67,7 @@ let pages = [
 
 // select.addEventListener("input", function (event) {
 //     document.documentElement.style.setProperty("color-scheme", event.target.value);
-	
+
 // 	localStorage.colorScheme = event.target.value;
 // });
 
